@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: cljs-web3:0.16.0-0">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/cljs-web3/cljs-web3/0.16.0-0/cljs-web3-0.16.0-0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

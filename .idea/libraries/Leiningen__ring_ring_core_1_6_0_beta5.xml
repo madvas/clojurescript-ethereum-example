@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: ring/ring-core:1.6.0-beta5">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/ring/ring-core/1.6.0-beta5/ring-core-1.6.0-beta5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

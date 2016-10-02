@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: onelog:0.4.5">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/onelog/onelog/0.4.5/onelog-0.4.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

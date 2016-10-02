@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: hawk:0.2.10">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/hawk/hawk/0.2.10/hawk-0.2.10.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

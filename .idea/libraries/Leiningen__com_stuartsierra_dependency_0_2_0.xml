@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: com.stuartsierra/dependency:0.2.0">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/stuartsierra/dependency/0.2.0/dependency-0.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
