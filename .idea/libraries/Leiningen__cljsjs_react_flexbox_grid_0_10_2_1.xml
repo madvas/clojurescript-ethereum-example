@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Leiningen: cljsjs/react-flexbox-grid:0.10.2-1">
-    <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/cljsjs/react-flexbox-grid/0.10.2-1/react-flexbox-grid-0.10.2-1.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

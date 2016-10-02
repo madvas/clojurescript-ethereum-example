@@ -4,3 +4,4 @@
 /resources/public/js/compiled
 out
 /figwheel_server.log
+/.idea/

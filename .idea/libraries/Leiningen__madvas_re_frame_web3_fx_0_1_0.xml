@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Leiningen: madvas.re-frame/web3-fx:0.1.0">
-    <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/madvas/re-frame/web3-fx/0.1.0/web3-fx-0.1.0.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

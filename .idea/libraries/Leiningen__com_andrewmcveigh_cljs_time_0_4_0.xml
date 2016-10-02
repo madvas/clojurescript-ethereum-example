@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Leiningen: com.andrewmcveigh/cljs-time:0.4.0">
-    <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/com/andrewmcveigh/cljs-time/0.4.0/cljs-time-0.4.0.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

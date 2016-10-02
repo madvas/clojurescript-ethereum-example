@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Leiningen: ring/ring-headers:0.3.0-beta1">
-    <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/ring/ring-headers/0.3.0-beta1/ring-headers-0.3.0-beta1.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
