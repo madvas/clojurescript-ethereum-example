@@ -32,7 +32,13 @@
   (fn [_ _]
     (merge
       {:db db/default-db
-       :dispatch [:contract/fetch-compiled-code [:contract/compiled-code-loaded]]}
+       :http-xhrio {:method :get
+                    :uri (gstring/format "/contracts/build/%s.abi"
+                                         (get-in db/default-db [:contract :name]))
+                    :timeout 6000
+                    :response-format (ajax/json-response-format {:keywords? true})
+                    :on-success [:contract/compiled-code-loaded]
+                    :on-failure [:log-error]}}
       (when (:provides-web3? db/default-db)
         {:web3-fx.blockchain/fns
          {:web3 (:web3 db/default-db)
@@ -55,10 +61,9 @@
 (reg-event-fx
   :contract/compiled-code-loaded
   interceptors
-  (fn [{:keys [db]} [contracts]]
+  (fn [{:keys [db]} [abi]]
     (let [web3 (:web3 db)
-          {:keys [abi]} (get-in contracts [:contracts (keyword (:name (:contract db)))])
-          contract-instance (web3-eth/contract-at web3 (js/JSON.parse abi) (:address (:contract db)))]
+          contract-instance (web3-eth/contract-at web3 abi (:address (:contract db)))]
 
       {:db (assoc-in db [:contract :instance] contract-instance)
 
@@ -153,7 +158,7 @@
                (js/JSON.parse abi)
                {:gas 4500000
                 :data bin
-                :from (second (:my-addresses db))}
+                :from (first (:my-addresses db))}
                :contract/deployed
                :log-error]]}})))
 
