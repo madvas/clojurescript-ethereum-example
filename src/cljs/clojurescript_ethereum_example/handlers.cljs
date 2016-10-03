@@ -37,7 +37,7 @@
                                          (get-in db/default-db [:contract :name]))
                     :timeout 6000
                     :response-format (ajax/json-response-format {:keywords? true})
-                    :on-success [:contract/compiled-code-loaded]
+                    :on-success [:contract/abi-loaded]
                     :on-failure [:log-error]}}
       (when (:provides-web3? db/default-db)
         {:web3-fx.blockchain/fns
@@ -59,7 +59,7 @@
       :dispatches [:blockchain/balance-loaded :log-error]}}))
 
 (reg-event-fx
-  :contract/compiled-code-loaded
+  :contract/abi-loaded
   interceptors
   (fn [{:keys [db]} [abi]]
     (let [web3 (:web3 db)

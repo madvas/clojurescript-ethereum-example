@@ -5,3 +5,4 @@
 out
 /figwheel_server.log
 /.idea/
+/.nrepl-port
