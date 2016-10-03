@@ -19,4 +19,4 @@
               :abi nil
               :bin nil
               :instance nil
-              :address "0xb6813fa816b24778530069dd77c3f5cd539228d7"}})
+              :address "0xe70a510651c3394f546f187c441303fd6520a1cd"}})

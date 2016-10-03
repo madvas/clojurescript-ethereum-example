@@ -24,18 +24,19 @@
   (dispatch [:blockchain/unlock-account "0xc5aa141d3822c3368df69bfd93ef2b13d1c59aec" "m"])
   (dispatch [:blockchain/unlock-account "0xe206f52728e2c1e23de7d42d233f39ac2e748977" "m"])
   (dispatch [:blockchain/unlock-account "0x522f9c6b122f4ca8067eb5459c10d03a35798ed9" "m"])
+  (dispatch [:blockchain/unlock-account "0x43100e355296c4fe3d2c0a356aa4151f1257393b" "m"])
   )
 
 (reg-event-fx
   :initialize
   (fn [_ _]
-    {:db db/default-db
-
-     :web3-fx.blockchain/fns
-     {:web3 (:web3 db/default-db)
-      :fns [[web3-eth/accounts :blockchain/my-addresses-loaded :log-error]]}
-
-     :dispatch [:contract/fetch-compiled-code [:contract/compiled-code-loaded]]}))
+    (merge
+      {:db db/default-db
+       :dispatch [:contract/fetch-compiled-code [:contract/compiled-code-loaded]]}
+      (when (:provides-web3? db/default-db)
+        {:web3-fx.blockchain/fns
+         {:web3 (:web3 db/default-db)
+          :fns [[web3-eth/accounts :blockchain/my-addresses-loaded :log-error]]}}))))
 
 (reg-event-fx
   :blockchain/my-addresses-loaded
@@ -152,7 +153,7 @@
                (js/JSON.parse abi)
                {:gas 4500000
                 :data bin
-                :from (first (:my-addresses db))}
+                :from (second (:my-addresses db))}
                :contract/deployed
                :log-error]]}})))
 
@@ -178,7 +179,7 @@
   interceptors
   (fn [_ [contract-instance]]
     (when-let [address (aget contract-instance "address")]
-      (console :log "Contract deployed at " address))))
+      (console :log "Contract deployed at" address))))
 
 (reg-event-fx
   :log-error

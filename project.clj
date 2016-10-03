@@ -3,6 +3,7 @@
                  [cljs-ajax "0.5.8"]
                  [cljs-react-material-ui "0.2.22"]
                  [cljs-web3 "0.16.0-0"]
+                 [cljsjs/bignumber "2.1.4-1"]
                  [cljsjs/react-flexbox-grid "0.10.2-1" :exclusions [cljsjs/react]]
                  [com.andrewmcveigh/cljs-time "0.4.0"]
                  [compojure "1.6.0-beta1"]
@@ -49,6 +50,8 @@
          :target-dir "resources/public/css"
          :source-map true
          :compression true}
+
+  :uberjar-name "clojurescript-ethereum-example.jar"
 
   :profiles
   {:dev

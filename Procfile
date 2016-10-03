@@ -1,0 +1,1 @@
+web: java $JVM_OPTS -cp target/clojurescript-ethereum-example.jar clojure.main -m clojurescript-ethereum-example.core

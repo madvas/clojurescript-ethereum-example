@@ -9,7 +9,6 @@
 
 (def col (r/adapt-react-class js/ReactFlexboxGrid.Col))
 (def row (r/adapt-react-class js/ReactFlexboxGrid.Row))
-(def grid (r/adapt-react-class js/ReactFlexboxGrid.Grid))
 
 (defn- new-tweet-component []
   (let [settings (subscribe [:db/settings])
@@ -66,14 +65,15 @@
             [:div {:style {:margin-top 5}}
              text]
             [:h3 {:style {:margin "5px 0 10px"}}
-             (u/truncate author-address 25)]
+             author-address]
             [ui/divider]])]]])))
 
 (defn main-panel []
   (let []
     (fn []
       [ui/mui-theme-provider
-       {:mui-theme (get-mui-theme {:palette {:primary1-color (color :deep-orange500)}})}
+       {:mui-theme (get-mui-theme {:palette {:primary1-color (color :light-blue500)
+                                             :accent1-color (color :amber700)}})}
        [:div
         [ui/app-bar {:title "Simple Decentralized Twitter"}]
         [new-tweet-component]
