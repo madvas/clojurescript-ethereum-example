@@ -6,3 +6,4 @@ out
 /figwheel_server.log
 /.idea/
 /.nrepl-port
+/clojurescript-ethereum-example.iml
