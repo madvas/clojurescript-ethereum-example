@@ -1,6 +1,8 @@
 # Clojure Ethereum Example
 
-This is source code for tutorial [How to create decentralised apps with Clojurescript re-frame and Ethereum](https://medium.com/@matus.lestan/how-to-create-decentralised-apps-with-clojurescript-re-frame-and-ethereum-81de24d72ff5#.nvfyq27lb)
+This is source code for tutorials:
+ * [How to create decentralised apps with Clojurescript re-frame and Ethereum](https://medium.com/@matus.lestan/how-to-create-decentralised-apps-with-clojurescript-re-frame-and-ethereum-81de24d72ff5#.nvfyq27lb)
+ * [How to deploy Clojurescript app into distributed storage IPFS](https://medium.com/@matus.lestan/how-to-deploy-clojurescript-app-into-distributed-storage-ipfs-e9d02cdfbc20#.ax3ra84bz)
 
 Deployed at https://clojurescript-ethereum-example.herokuapp.com/
 
