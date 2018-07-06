@@ -9,7 +9,7 @@
     [day8.re-frame.http-fx]
     [goog.string :as gstring]
     [goog.string.format]
-    [madvas.re-frame.web3-fx]
+    [district0x.re-frame.web3-fx]
     [re-frame.core :refer [reg-event-db reg-event-fx path trim-v after debug reg-fx console dispatch]]
     [clojurescript-ethereum-example.utils :as u]))
 
