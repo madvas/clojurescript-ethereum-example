@@ -26,5 +26,5 @@ lein repl
 (figwheel-sidecar.repl-api/start-figwheel! (figwheel-sidecar.config/fetch-config))
 (figwheel-sidecar.repl-api/cljs-repl)
 ```
-Open at http://localhost:6655/
+Open at http://localhost:6777/
 
